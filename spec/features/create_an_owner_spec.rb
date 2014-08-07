@@ -7,7 +7,7 @@ feature 'creating an owner' do
     fill_in "Last name", with: "Smith"
     fill_in "Email", with: "piratesarrgr8@gmail.com"
 
-    click_on "Submit"
+    click_on "Create Owner"
     expect(page).to have_content("Sucessfully created owner")
     expect(page).to have_content('Will')
   end
